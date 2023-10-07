@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0, 0%, 0%; /* Schwarzer Hintergrund */
+    --foreground: 100%, 100%, 100%; /* Weißer Text */
+
+    --card: 0, 0%, 0%; /* Schwarzer Kartenhintergrund */
+    --card-foreground: 100%, 100%, 100%; /* Weißer Text auf Karten */
+
+    --popover: 0, 0%, 0%; /* Schwarzer Popover-Hintergrund */
+    --popover-foreground: 100%, 100%, 100%; /* Weißer Text auf Popovers */
+
+    --primary: 255, 105, 180; /* Pink als primäre Farbe */
+    --primary-foreground: 100%, 100%, 100%; /* Weißer Text auf Pink */
+
+    --secondary: 0, 0%, 0%; /* Schwarze sekundäre Farbe */
+    --secondary-foreground: 100%, 100%, 100%; /* Weißer Text auf Schwarz */
+
+    --muted: 0, 0%, 0%; /* Schwarze gedämpfte Farbe */
+    --muted-foreground: 100%, 100%, 100%; /* Weißer Text auf Schwarz */
+
+    --accent: 0, 0%, 0%; /* Schwarze Akzentfarbe */
+    --accent-foreground: 100%, 100%, 100%; /* Weißer Text auf Schwarz */
+
+    --destructive: 255, 105, 180; /* Pink als destructive Farbe */
+    --destructive-foreground: 100%, 100%, 100%; /* Weißer Text auf Pink */
+
+    --border: 0, 0%, 0%; /* Schwarzer Rahmen */
+    --input: 0, 0%, 0%; /* Schwarzer Eingabebereich */
+    --ring: 255, 105, 180; /* Pink als Ringfarbe */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0, 0%, 0%; /* Schwarzer Hintergrund */
+    --foreground: 100%, 100%, 100%; /* Weißer Text */
+
+    --card: 0, 0%, 0%; /* Schwarzer Kartenhintergrund */
+    --card-foreground: 100%, 100%, 100%; /* Weißer Text auf Karten */
+
+    --popover: 0, 0%, 0%; /* Schwarzer Popover-Hintergrund */
+    --popover-foreground: 100%, 100%, 100%; /* Weißer Text auf Popovers */
+
+    --primary: 255, 105, 180; /* Pink als primäre Farbe */
+    --primary-foreground: 100%, 100%, 100%; /* Weißer Text auf Pink */
+
+    --secondary: 0, 0%, 0%; /* Schwarze sekundäre Farbe */
+    --secondary-foreground: 100%, 100%, 100%; /* Weißer Text auf Schwarz */
+
+    --muted: 0, 0%, 0%; /* Schwarze gedämpfte Farbe */
+    --muted-foreground: 100%, 100%, 100%; /* Weißer Text auf Schwarz */
+
+    --accent: 0, 0%, 0%; /* Schwarze Akzentfarbe */
+    --accent-foreground: 100%, 100%, 100%; /* Weißer Text auf Schwarz */
+
+    --destructive: 255, 105, 180; /* Pink als destructive Farbe */
+    --destructive-foreground: 100%, 100%, 100%; /* Weißer Text auf Pink */
+
+    --border: 0, 0%, 0%; /* Schwarzer Rahmen */
+    --input: 0, 0%, 0%; /* Schwarzer Eingabebereich */
+    --ring: 255, 105, 180; /* Pink als Ringfarbe */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
